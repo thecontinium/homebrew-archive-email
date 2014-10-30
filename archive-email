@@ -1,0 +1,2 @@
+/usr/bin/osascript $1/archive-email.scpt INBOX "Archived Inbox" 180 false
+/usr/bin/osascript $1/archive-email.scpt Sent "Archived Sent Mail" 180 false
