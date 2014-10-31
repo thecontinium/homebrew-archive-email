@@ -28,7 +28,6 @@ class ArchiveEmail < Formula
       <key>ProgramArguments</key>
       <array>
         <string>/usr/local/bin/archive-email</string>
-        <string>#{prefix}</string>
       </array>
       <key>StandardErrorPath</key>
       <string>/tmp/#{plist_name}.err</string>
