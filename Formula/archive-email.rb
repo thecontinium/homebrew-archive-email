@@ -9,7 +9,8 @@ class ArchiveEmail < Formula
 
 
   def install
-    prefix.install Dir["scripts/archive-email.scrpt"]
+    prefix.install Dir["scripts/archive-email.scpt"]
+    system "make", "install"
     bin.install 'archive-email'
   end
 
