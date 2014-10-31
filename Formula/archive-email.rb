@@ -5,16 +5,9 @@ class ArchiveEmail < Formula
 
   skip_clean 'bin'
 
-  depends_on "terminal-notifier"
-
-
   def install
     prefix.install Dir["scripts/archive-email.scpt"]
     bin.install 'archive-email'
-  end
-
-  def post_install
-    ln_s prefix+'archive-email.scpt' , '~/Library/Scripts/testing.scpt'
   end
 
   #plist_options :startup => true
@@ -32,6 +25,8 @@ class ArchiveEmail < Formula
       <array>
         <string>/usr/local/bin/archive-email</string>
         <string>#{prefix}</string>
+        <string>180</string>
+        <string>false</string>
       </array>
       <key>StandardErrorPath</key>
       <string>/tmp/#{plist_name}.err</string>
