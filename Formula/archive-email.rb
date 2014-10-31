@@ -10,8 +10,11 @@ class ArchiveEmail < Formula
 
   def install
     prefix.install Dir["scripts/archive-email.scpt"]
-    ln_s prefix+'archive-email.scpt' , '~/Library/Scripts/testing.scpt'
     bin.install 'archive-email'
+  end
+
+  def post_install
+    ln_s prefix+'archive-email.scpt' , '~/Library/Scripts/testing.scpt'
   end
 
   #plist_options :startup => true
