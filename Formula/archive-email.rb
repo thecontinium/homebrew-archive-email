@@ -10,7 +10,6 @@ class ArchiveEmail < Formula
 
   def install
     prefix.install Dir["scripts/archive-email.scpt"]
-    system "make", "install"
     bin.install 'archive-email'
   end
 
@@ -28,6 +27,7 @@ class ArchiveEmail < Formula
       <key>ProgramArguments</key>
       <array>
         <string>/usr/local/bin/archive-email</string>
+        <string>#{prefix}</string>
       </array>
       <key>StandardErrorPath</key>
       <string>/tmp/#{plist_name}.err</string>
