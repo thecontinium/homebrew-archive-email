@@ -1,7 +1,7 @@
 class ArchiveEmail < Formula
   homepage 'https://github.com/thecontinium/homebrew-archive-email/'
   url 'https://github.com/thecontinium/homebrew-archive-email.git'
-  version '0.0.1'
+  version '0.0.2'
 
   skip_clean 'bin'
 

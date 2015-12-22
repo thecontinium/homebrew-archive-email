@@ -1,3 +1,5 @@
+#!/bin/bash
+
 if [ ! -z $1 ]; then
   /usr/bin/osascript $1/archive-email.scpt INBOX "Archived Inbox" $2 $3 
   /usr/bin/osascript $1/archive-email.scpt Sent "Archived Sent Mail" $2 $3 
